@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Repository](https://github.com/ivandro-neto/interactive-rating-main.git)
-- Live Site URL: [Interative Rating Main](https://ivandro-neto.github.io/interactive-rating-main/)
+- Solution URL: [Repository](https://github.com/ivandro-neto/NFT-preview-card-component-Main.git)
+- Live Site URL: [NFT Preview Card Component Main](https://ivandro-neto.github.io/NFT-preview-card-component-Main/)
 
 ## My process
 
