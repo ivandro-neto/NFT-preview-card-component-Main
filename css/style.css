@@ -1,0 +1,164 @@
+/*
+    Coded by Ivandro Neto
+    github user-name: ivandro-neto
+    Frontend Mentor user-name: @ivandro-neto
+ */
+ 
+/************************************************************************** Start Desktop view **************************************************************************/
+/* Default */
+@import url("https://fonts.google.com/specimen/Outfit");
+*{
+    box-sizing: border-box;
+    font-family: Outfit, sans-serif;
+}
+/** styling elements by tags name */
+body{
+    display: flex;
+    background-color:hsl(217, 54%, 11%);
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+h1:hover{
+    color: hsl(178, 100%, 50%);
+    transition: color 500ms;
+}
+
+p{
+    font-size: 18px;
+    color: hsl(215, 51%, 70%);
+    font-weight: 400;
+}
+/*** Start styling container */
+.container{
+    box-shadow: 0 15px 10px rgba(0, 0, 0, .3);
+    border-radius: 20px;
+    display: grid;
+    width: 400px;
+    height: 650px;
+    justify-items: center;
+    background-color: hsl(216, 50%, 16%);
+    padding: 20px;
+}
+/**** Styling the image container  */
+.container-img-container{
+    position: relative;    
+    cursor: pointer;
+}
+.equilibrium{
+    width: 350px;
+    border-radius: 10px;
+}
+.hover-content{
+    display: grid;
+    border-radius: 10px;
+    background-color: hsla(178, 100%, 50%, .6) ;
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 700ms;
+}
+.hover-content img{
+    width: 44px;
+}
+/**** Styling information container */
+.container-info{
+    color: hsl(0, 0%, 100%);
+}
+/**** Styling Date container */
+.container-date{
+    display: flex;
+    width: 350px;
+    justify-content: space-between;
+    font-weight: 300;
+}
+.gem::before{
+    content: url("../images/icon-ethereum.svg");
+}
+.gem{
+    color: hsl(178, 100%, 50%);
+}
+.clock::before{
+    content: url("../images/icon-clock.svg");
+}
+.clock{
+    color:hsl(215, 51%, 70%);
+}
+/**** Styling User container */
+.container-user{
+    width: 350px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    border-top: 1px solid hsl(215, 32%, 27%);
+    padding: 10px;
+}
+.container-user img{
+    width: 40px;
+    height: 40px;
+    border: 2px solid hsl(0, 0%, 100%);
+    border-radius: 50%;
+}
+.name{
+    color: hsl(0, 0%, 100%);
+    transition: color 500ms;
+    cursor: pointer;
+}
+.name:hover{
+    color: hsl(178, 100%, 50%);
+}
+
+/*********************************************************************** End Desktop view**************************************************************************/
+
+/*********************************************************************** Start Mobile view ***********************************************************************/
+@media screen and (max-width: 460px){
+    /** Styling tags */
+    h1{
+        font-size: 18px;
+    }
+    p{
+        font-size: 14px;
+    }
+    /*** Styling User container */
+    .container{
+        width: 300px;
+        height: 500px;
+        padding: 20px;
+    }
+    /**** Styling image container */
+    .equilibrium{
+        width: 250px;
+        border-radius: 10px;
+    }
+    .hover-content{
+        width: 250px;
+        height: 250px;
+    }
+    .hover-content img{
+        width: 33px;
+    }
+    .container-date{
+        width: 250px;
+    }
+    /**** Styling User container */
+    .container-user{
+        width: auto;
+        gap:10px;
+        padding: 10px;
+    }
+    .container-user img{
+        width: 30px;
+        height: 30px;
+    }
+}
+/************************************************************************** End Mobile view **************************************************************************/
